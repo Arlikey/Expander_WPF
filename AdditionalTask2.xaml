@@ -1,0 +1,50 @@
+﻿<Window x:Class="Expander_WPF.AdditionalTask2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Expander_WPF"
+        mc:Ignorable="d"
+        Title="AdditionalTask2" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Name="preferencesGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <Label>Музыка :</Label>
+                <RadioButton>Рок</RadioButton>
+                <RadioButton>Поп</RadioButton>
+                <RadioButton>Джаз</RadioButton>
+                <RadioButton>Реп</RadioButton>
+                <RadioButton>Классика</RadioButton>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Label>Еда :</Label>
+                <RadioButton>Острая</RadioButton>
+                <RadioButton>Солёная</RadioButton>
+                <RadioButton>Сладкая</RadioButton>
+                <RadioButton>Кислая</RadioButton>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <Label>Цвет :</Label>
+                <RadioButton>Чёрный</RadioButton>
+                <RadioButton>Белый</RadioButton>
+                <RadioButton>Красный</RadioButton>
+                <RadioButton>Синий</RadioButton>
+                <RadioButton>Зелёный</RadioButton>
+                <RadioButton>Жёлтый</RadioButton>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="1">
+            <Button Name="showPreferencesButton" Click="showPreferencesButton_Click">Отобразить предпочтения</Button>
+            <Button Name="resetButton" Click="resetButton_Click">Сбросить</Button>
+        </StackPanel>
+    </Grid>
+</Window>
